@@ -1,3 +1,6 @@
+## [0.2.7] - 2021/05/14
+    * Added filterCountry - you can select only those countries which you to display in dropdown
+
 ## [0.2.6] - 2021/05/14
     * Introduce the `currentCountry`, `currentState`, and `currentCity` properties to allow previously selected values to remain
     * Sort `CSCPicker` constructor first

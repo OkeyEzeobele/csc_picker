@@ -81,12 +81,15 @@ class _MyHomePageState extends State<MyHomePage> {
                   citySearchPlaceholder: "City",
 
                   ///labels for dropdown
-                  countryDropdownLabel: "*Country",
-                  stateDropdownLabel: "*State",
-                  cityDropdownLabel: "*City",
+                  countryDropdownLabel: "Country",
+                  stateDropdownLabel: "State",
+                  cityDropdownLabel: "City",
 
                   ///Default Country
-                  //defaultCountry: DefaultCountry.India,
+                  ///defaultCountry: CscCountry.India,
+
+                  ///Country Filter [OPTIONAL PARAMETER]
+                  countryFilter: [CscCountry.India,CscCountry.United_States,CscCountry.Canada],
 
                   ///Disable country dropdown (Note: use it with default country)
                   //disableCountry: true,
@@ -138,6 +141,9 @@ class _MyHomePageState extends State<MyHomePage> {
                       cityValue = value;
                     });
                   },
+
+                  ///Show only specific countries using country filter
+                  // countryFilter: ["United States", "Canada", "Mexico"],
                 ),
 
                 ///print newly selected country state and city in Text Widget
